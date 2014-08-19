@@ -54,7 +54,7 @@ _Accessories_.
 __NOTE__: For Windows-only platforms, you can still do your
 development on Mac hardware by running Windows in a virtual machine
 environment or in dual-boot mode. For available options, see the
-Windows Phone Platform Guide or the Windows 8 Platform Guide.
+Windows Phone 8 Platform Guide or the Windows Platform Guide.
 
 The more likely it is that you run the CLI from different machines,
 the more it makes sense to maintain a remote source code repository,
