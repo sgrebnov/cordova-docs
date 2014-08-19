@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="Chinese" value="zh">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="English" value="en">
+<option selected value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.3.0">3.3.0</option>
+<option value="3.2.0">3.2.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="3.0.0">3.0.0</option>
+<option value="2.9.0">2.9.0</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="French" value="fr">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="German" value="de">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Italian" value="it">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Japanese" value="ja">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="ko">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="2.0.0">2.0.0</option>
+</optgroup>
+<optgroup label="Polish" value="pl"><option value="edge">edge</option></optgroup>
+<optgroup label="Russian" value="ru">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Slovenian" value="sl">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+</optgroup>
+<optgroup label="Spanish" value="es">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Windows 8 Plugins</h1>
+            <small><select><option value="Windows%25208%2520Plugins">Windows 8 Plugins</option>
+<option value="Windows%208%20Plugins_creating_a_windows_8_plugin_in_javascript">      - Creating a Windows 8 Plugin in JavaScript</option>
+<option value="Windows%208%20Plugins_inside_cordova_exec_on_windows_8">      - Inside Cordova exec on Windows 8</option>
+<option value="Windows%208%20Plugins_the_cordova_exec_proxy">      - The Cordova exec proxy</option>
+<option value="How%2520WinJS%2520accesses%2520native/managed%2520code">How WinJS accesses native/managed code</option>
+<option value="Some%2520technical%2520notes:">Some technical notes:</option>
+<option value="Defining%2520your%2520plugin">Defining your plugin</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>Guides</h1>
+<ul>
+<li><a href="guide_overview_index.md.html#Overview">Overview</a></li>
+<li><a href="guide_support_index.md.html#Platform%20Support">Platform Support</a></li>
+<li><a href="guide_cli_index.md.html#The%20Command-Line%20Interface">The Command-Line Interface</a></li>
+<li><a href="guide_platforms_index.md.html#Platform%20Guides">Platform Guides</a></li>
+<li><a href="plugin_ref_plugman.md.html#Using%20Plugman%20to%20Manage%20Plugins">Using Plugman to Manage Plugins</a></li>
+<li><a href="config_ref_index.md.html#The%20config.xml%20File">The config.xml File</a></li>
+<li><a href="config_ref_images.md.html#Icons%20and%20Splash%20Screens">Icons and Splash Screens</a></li>
+<li><a href="guide_hybrid_webviews_index.md.html#Embedding%20WebViews">Embedding WebViews</a></li>
+<li><a href="guide_hybrid_plugins_index.md.html#Plugin%20Development%20Guide">Plugin Development Guide</a></li>
+<li><a href="guide_appdev_privacy_index.md.html#Privacy%20Guide">Privacy Guide</a></li>
+<li><a href="guide_appdev_security_index.md.html#Security%20Guide">Security Guide</a></li>
+<li><a href="guide_appdev_whitelist_index.md.html#Whitelist%20Guide">Whitelist Guide</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+<li><a href="guide_next_index.md.html#Next%20Steps">Next Steps</a></li>
+<li><a href="_index.html">Keyword Index</a></li>
+</ul>
+<h1>API Reference</h1>
+<ul>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_plugins_pluginapis.md.html#Plugin%20APIs">Plugin APIs</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Windows%208%20Plugins">Windows 8 Plugins</a></h1>
+
+<p>This section provides details for how to implement a plugin for use in 
+a Windows Store app. Before reading this, see Application Plugins for 
+an overview of the plugin's structure and its common JavaScript interface. 
+This section continues to demonstrate the sample <em>echo</em> plugin that 
+communicates from the Cordova webview to the native platform and back.</p>
+
+<p>It is important to note that Windows 8 supports developing directly in Javascript, which means developing the 'native' portions in only required in special cases.</p>
+
+<h2>
+<a name="Windows%208%20Plugins_creating_a_windows_8_plugin_in_javascript">Creating a Windows 8 Plugin in JavaScript</a>
+</h2>
+
+<p>These instructions are to create a pure JavaScript plugin. Understanding this is crucial to understanding how to add the native/managed bits.</p>
+
+<p>Windows 8 Cordova plugins are essentially a thin wrapper around existing WinJS provided functions, but assuming you will want to define your JS common interface for multiple devices, you will typically have 1 JS file that provides the API.</p>
+
+<pre class="prettyprint"><code>// inside file echoplugin.js
+var EchoPlugin = {
+    // the echo function calls successCallback with the provided text in strInput
+    // if strInput is empty, it will call the errorCallback
+    echo:function(successCallback, errorCallback, strInput) {
+        cordova.exec(successCallback,errorCallback,"EchoPlugin","echo",[strInput]);
+    }
+}
+</code></pre>
+
+<h2>
+<a name="Windows%208%20Plugins_inside_cordova_exec_on_windows_8">Inside Cordova exec on Windows 8</a>
+</h2>
+
+<p>The cordova.exec function is defined differently on every platform, this is because each platform has it's own way of communicating between the application js code, and the native wrapper code. But in the case of Windows 8, there is no native wrapper, so the exec call is there for consistency. You could do your js only plugin work directly in EchoPlugin.echo, something like :</p>
+
+<pre class="prettyprint"><code>// inside file echoplugin.js ( this is what NOT to do if you want to reuse the JS API cross platform )
+var EchoPlugin = {
+    echo:function(successCallback,errorCallback,strInput) {
+        if(!strInput || !strInput.length) {
+            errorCallback("Error, something was wrong with the input string. =&gt;" + strInput);
+        }
+        else {
+            successCallback(strInput + "echo");
+        }
+    }
+}
+</code></pre>
+
+<p>This would/could work fine, however it means that you will need different versions of echoPlugin.js for different platforms, and possibly you could have issues with inconsistencies in your implementations. As a best practice, we decided to mimic a native API inside cordova.exec on Windows 8, so we could run the same JS code, and not have to rewrite it for the platform, and also take advantage of any parameter checking, or other common code provided by developers who were working on other platforms.</p>
+
+<h2>
+<a name="Windows%208%20Plugins_the_cordova_exec_proxy">The Cordova exec proxy</a>
+</h2>
+
+<p>On Windows 8, cordova provides a proxy that you can use to register an object that will handle all cordova.exec calls to an API.</p>
+
+<p>For example if you wanted to provide the implementation for the Accelerometer API, you would do this :</p>
+
+<p>cordova.commandProxy.add("Accelerometer",{
+    start:function(){
+        // your code here ...
+    }
+    // ,
+    //  ... and the rest of the API here
+});</p>
+
+<p>So in our case, we will assume that the code in echoplugin.js is handling cross platform relevant JavaScript, and we can simply write a proxy for Windows 8</p>
+
+<pre class="prettyprint"><code>// in file echopluginProxy.js
+cordova.commandProxy.add("EchoPlugin",{
+    echo:function(successCallback,errorCallback,strInput) {
+        if(!strInput || !strInput.length) {
+            errorCallback("Error, something was wrong with the input string. =&gt;" + strInput);
+        }
+        else {
+            successCallback(strInput + "echo");
+        }
+    }
+});
+</code></pre>
+
+<p>The plugin definition</p>
+
+<p>If we want users of our plugin to be able to easily install our plugin, we will need to define it according to how PlugMan defines plugins. More on this in the <a href="plugin_ref_spec.md.html#Plugin%20Specification">Plugin Spec</a></p>
+
+<pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.risingj.echoplugin"
+    version="0.1.0"&gt;
+
+    &lt;js-module src="www/echoplugin.js" name="echoplugin"&gt;
+        &lt;clobbers target="window.echoplugin" /&gt;
+    &lt;/js-module&gt;
+
+    &lt;!-- windows8 --&gt;
+    &lt;platform name="windows8"&gt;
+        &lt;js-module src="src/windows8/echopluginProxy.js" name="EchoProxy"&gt;
+            &lt;merges target="" /&gt;
+        &lt;/js-module&gt;
+    &lt;/platform&gt;
+
+    &lt;!-- other platforms --&gt;
+
+&lt;/plugin&gt;
+</code></pre>
+
+<p>This gives us a working Windows 8 JavaScript plugin that uses a common file ( echoplugin.js ) and uses a proxy to provide the Windows 8 only portion of implementation ( echopluginProxy.js ). So how do we add native/managed code to this? Well we are going to start the same, the only difference will be what we do inside in echopluginProxy methods.</p>
+
+<h1><a name="How%20WinJS%20accesses%20native/managed%20code">How WinJS accesses native/managed code</a></h1>
+
+<p>In Windows 8, WinJS authored apps are able to interact with native code, this inter-op is available for Windows Runtime Components. The details are numerous, and this guide will only cover the basics. Microsoft provides much more info <a class="external" href="http://msdn.microsoft.com/en-us/library/windows/apps/hh441569.aspx">here</a>.</p>
+
+<p>When you create your Windows Runtime Component, any class that is defined as 'public ref class sealed' is considered an 'activatable class' and will be callable from JavaScript.</p>
+
+<pre class="prettyprint"><code>// in your header file .h
+namespace EchoRuntimeComponent
+{
+    public ref class EchoPluginRT sealed 
+    {
+        public:
+        static Platform::String^ Echo(Platform::String^ input);
+    }
+}
+
+// in the implementation file .cpp
+using namespace EchoRuntimeComponent;
+using namespace Platform;
+
+Platform::String^ EchoPluginRT::Echo(Platform::String^ input)
+{
+    if(input-&gt;IsEmpty()) 
+    {
+        return "Error: input string is empty.";
+    }
+    else
+    {
+        return input-&gt;ToString() + "echo";
+    }
+}
+</code></pre>
+
+<p>Now in order for us to call the native code, we use the namespace, classname, and lowerCamelCase the method we are calling.</p>
+
+<p>var res = EchoRuntimeComponent.EchoPluginRT.echo("boom");
+Moving this to our echopluginProxy.js file, we get this :</p>
+
+<pre class="prettyprint"><code>// in file echopluginProxy.js
+cordova.commandProxy.add("EchoPlugin",{
+    echo:function(successCallback,errorCallback,strInput) {
+        var res = EchoRuntimeComponent.EchoPluginRT.echo(strInput);
+        if(res.indexOf("Error") == 0) {
+            errorCallback(res);
+        }
+        else {
+            successCallback(res);
+        }
+    }
+});
+</code></pre>
+
+<p>And that's it, we have an end to end C++ backed js callable plugin for use in Apache Cordova Windows 8!</p>
+
+<h1><a name="Some%20technical%20notes:">Some technical notes:</a></h1>
+
+<ul>
+<li>the callback is typically async, so calling the callback right away is probably not expected by the caller. In practice, if the call is not async, you should at least use a javascript timeout to force the callback to be called async.</li>
+<li>Activatable classes can do all kinds of awesome, like event dispatching, async callbacks, passing your own object types, arrays, collections, overloaded methods and much more. I recommend you do your homework.</li>
+<li>If you stick to common Windows Phone 8 and Windows 8 SDK API calls, you will be able to use the same runtime component ( native or managed bits ) in a Windows Phone 8 Apache Cordova plugin. ~stay tuned for that post.</li>
+</ul>
+<h1><a name="Defining%20your%20plugin">Defining your plugin</a></h1>
+
+<p>Now that we have a working plugin, we need to revisit the plugin definition from earlier so we can publish it. We can now add the runtime component as a framework.
+Note that the output type of a WindowsRuntimeComponent can be either .winmd or .dll</p>
+
+<pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.risingj.echoplugin"
+    version="0.2.0"&gt;
+
+    &lt;js-module src="www/echoplugin.js" name="echoplugin"&gt;
+        &lt;clobbers target="window.echoplugin" /&gt;
+    &lt;/js-module&gt;
+
+    &lt;!-- windows8 --&gt;
+    &lt;platform name="windows8"&gt;
+        &lt;js-module src="src/windows8/echopluginProxy.js" name="EchoProxy"&gt;
+            &lt;merges target="" /&gt;
+        &lt;/js-module&gt;
+        &lt;framework src="src/windows8/EchoRuntimeComponent.winmd" custom="true"/&gt;
+    &lt;/platform&gt;
+
+    &lt;!-- other platforms --&gt;
+
+&lt;/plugin&gt;
+</code></pre>
+
+<p>That's it, you now have a distributable plugin that you can share with the world!
+One thing to note, support for adding frameworks to Windows 8 Cordova project was only recently added so you will need to make sure your cordova tooling current.  The cordova-cli and cordova-plugman both support adding removing native backed plugins.</p>
+
+<p>&gt; cordova plugin add com.risingj.echoplugin
+or
+&gt; plugman install --platform windows8 --plugin com.risingj.echoplugin --project .</p>
+
+<p>https://github.com/purplecabbage/cordova-runtimecomp-echoplug</p>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

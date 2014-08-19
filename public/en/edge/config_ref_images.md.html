@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="Chinese" value="zh">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="English" value="en">
+<option selected value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.3.0">3.3.0</option>
+<option value="3.2.0">3.2.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="3.0.0">3.0.0</option>
+<option value="2.9.0">2.9.0</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="French" value="fr">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="German" value="de">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Italian" value="it">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Japanese" value="ja">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="ko">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="2.0.0">2.0.0</option>
+</optgroup>
+<optgroup label="Polish" value="pl"><option value="edge">edge</option></optgroup>
+<optgroup label="Russian" value="ru">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Slovenian" value="sl">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+</optgroup>
+<optgroup label="Spanish" value="es">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Icons and Splash Screens</h1>
+            <small><select><option value="Icons%2520and%2520Splash%2520Screens">Icons and Splash Screens</option>
+<option value="Icons%20and%20Splash%20Screens_configuring_icons_in_the_cli">      - Configuring Icons in the CLI</option>
+<option value="Icons%20and%20Splash%20Screens_configuring_splash_screens_in_the_cli">      - Configuring Splash Screens in the CLI</option>
+<option value="Icons%20and%20Splash%20Screens_splash_screens_for_the_android_platform">      - Splash Screens for the Android Platform</option>
+<option value="Icons%20and%20Splash%20Screens_splash_screens_for_the_ios_platform">      - Splash Screens for the iOS Platform</option>
+<option value="Icons%20and%20Splash%20Screens_splash_screens_for_the_blackberry_10_platform">      - Splash Screens for the BlackBerry 10 Platform</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>Guides</h1>
+<ul>
+<li><a href="guide_overview_index.md.html#Overview">Overview</a></li>
+<li><a href="guide_support_index.md.html#Platform%20Support">Platform Support</a></li>
+<li><a href="guide_cli_index.md.html#The%20Command-Line%20Interface">The Command-Line Interface</a></li>
+<li><a href="guide_platforms_index.md.html#Platform%20Guides">Platform Guides</a></li>
+<li><a href="plugin_ref_plugman.md.html#Using%20Plugman%20to%20Manage%20Plugins">Using Plugman to Manage Plugins</a></li>
+<li><a href="config_ref_index.md.html#The%20config.xml%20File">The config.xml File</a></li>
+<li><a href="config_ref_images.md.html#Icons%20and%20Splash%20Screens">Icons and Splash Screens</a></li>
+<li><a href="guide_hybrid_webviews_index.md.html#Embedding%20WebViews">Embedding WebViews</a></li>
+<li><a href="guide_hybrid_plugins_index.md.html#Plugin%20Development%20Guide">Plugin Development Guide</a></li>
+<li><a href="guide_appdev_privacy_index.md.html#Privacy%20Guide">Privacy Guide</a></li>
+<li><a href="guide_appdev_security_index.md.html#Security%20Guide">Security Guide</a></li>
+<li><a href="guide_appdev_whitelist_index.md.html#Whitelist%20Guide">Whitelist Guide</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+<li><a href="guide_next_index.md.html#Next%20Steps">Next Steps</a></li>
+<li><a href="_index.html">Keyword Index</a></li>
+</ul>
+<h1>API Reference</h1>
+<ul>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_plugins_pluginapis.md.html#Plugin%20APIs">Plugin APIs</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Icons%20and%20Splash%20Screens">Icons and Splash Screens</a></h1>
+
+<p>This section shows how to configure an app's icon and optional splash
+screen for various platforms, both when working in the Cordova CLI
+(described in <a href="guide_cli_index.md.html#The%20Command-Line%20Interface">The Command-Line Interface</a>) or using platform-specific
+SDK tools (detailed in the <a href="guide_platforms_index.md.html#Platform%20Guides">Platform Guides</a>).</p>
+
+<h2>
+<a name="Icons%20and%20Splash%20Screens_configuring_icons_in_the_cli">Configuring Icons in the CLI</a>
+</h2>
+
+<p>When working in the CLI you can define app icon(s) via <code>&lt;icon&gt;</code> element (<code>config.xml</code>).
+If you do not specify an icon then the Apache Cordova logo is used.</p>
+
+<pre class="prettyprint"><code>    &lt;icon src="res/ios/icon.png" platform="ios" width="57" height="57" density="mdpi" /&gt;
+</code></pre>
+
+<p>src: (required) specifies the location of the image file, relative to your project directory</p>
+
+<p>platform: (optional) target platform</p>
+
+<p>width: (optional) icon width in pixels</p>
+
+<p>height: (optional) icon height in pixels </p>
+
+<p>density: (optional) android specific, specifies icon density</p>
+
+<p>The following configuration can be used to define single default icon
+which will be used for all platforms.</p>
+
+<pre class="prettyprint"><code>    &lt;icon src="res/icon.png" /&gt;
+</code></pre>
+
+<p>For each platform you can also define a pixel-perfect icons set to fit 
+different screen resolutions.</p>
+
+<p>Amazon Fire OS</p>
+
+<pre class="prettyprint"><code>     &lt;platform name="amazon-fireos"&gt;
+              &lt;icon src="res/android/ldpi.png" density="ldpi" /&gt;
+              &lt;icon src="res/android/mdpi.png" density="mdpi" /&gt;
+              &lt;icon src="res/android/hdpi.png" density="hdpi" /&gt;
+              &lt;icon src="res/android/xhdpi.png" density="xhdpi" /&gt;
+     &lt;/platform&gt;
+</code></pre>
+
+<p>Android</p>
+
+<pre class="prettyprint"><code>     &lt;platform name="android"&gt;
+              &lt;icon src="res/android/ldpi.png" density="ldpi" /&gt;
+              &lt;icon src="res/android/mdpi.png" density="mdpi" /&gt;
+              &lt;icon src="res/android/hdpi.png" density="hdpi" /&gt;
+              &lt;icon src="res/android/xhdpi.png" density="xhdpi" /&gt;
+     &lt;/platform&gt;
+</code></pre>
+
+<p>Blackberry10</p>
+
+<pre class="prettyprint"><code>     &lt;platform name="blackberry10"&gt;
+              &lt;icon src="res/bb10/icon-86.png" /&gt;
+              &lt;icon src="res/bb10/icon-150.png" /&gt;
+     &lt;/platform&gt;
+</code></pre>
+
+<p>See BlackBerry's documentation for targeting multiple sizes and locales.
+[http://developer.blackberry.com/html5/documentation/icon_element.html]</p>
+
+<p>Firefox OS</p>
+
+<pre class="prettyprint"><code>     &lt;platform name="firefoxos"&gt;
+              &lt;icon src="res/ff/logo.png" width="60" height="60" /&gt;
+     &lt;/platform&gt;
+</code></pre>
+
+<p>iOS</p>
+
+<pre class="prettyprint"><code>     &lt;platform name="ios"&gt;
+              &lt;!-- iOS 7.0+ --&gt;
+              &lt;!-- iPhone / iPod Touch  --&gt;
+              &lt;icon src="res/ios/icon-60.png" width="60" height="60" /&gt;
+              &lt;icon src="res/ios/icon-60@2x.png" width="120" height="120" /&gt;
+              &lt;!-- iPad --&gt;
+              &lt;icon src="res/ios/icon-76.png" width="76" height="76" /&gt;
+              &lt;icon src="res/ios/icon-76@2x.png" width="152" height="152" /&gt;
+              &lt;!-- iOS 6.1 --&gt;
+              &lt;!-- Spotlight Icon --&gt;
+              &lt;icon src="res/ios/icon-40.png" width="40" height="40" /&gt;
+              &lt;icon src="res/ios/icon-40@2x.png" width="80" height="80" /&gt;
+              &lt;!-- iPhone / iPod Touch --&gt;
+              &lt;icon src="res/ios/icon.png" width="57" height="57" /&gt;
+              &lt;icon src="res/ios/icon@2x.png" width="114" height="114" /&gt;
+              &lt;!-- iPad --&gt;
+              &lt;icon src="res/ios/icon-72.png" width="72" height="72" /&gt;
+              &lt;icon src="res/ios/icon-72@2x.png" width="144" height="144" /&gt;
+              &lt;!-- iPhone Spotlight and Settings Icon --&gt;
+              &lt;icon src="res/ios/icon-small.png" width="29" height="29" /&gt;
+              &lt;icon src="res/ios/icon-small@2x.png" width="58" height="58" /&gt;
+              &lt;!-- iPad Spotlight and Settings Icon --&gt;
+              &lt;icon src="res/ios/icon-50.png" width="50" height="50" /&gt;
+              &lt;icon src="res/ios/icon-50@2x.png" width="100" height="100" /&gt;
+     &lt;/platform&gt;
+</code></pre>
+
+<p>Tizen</p>
+
+<pre class="prettyprint"><code>     &lt;platform name="tizen"&gt;
+              &lt;icon src="res/tizen/icon-128.png" width="128" height="128" /&gt;
+     &lt;/platform&gt;
+</code></pre>
+
+<p>Windows Phone8</p>
+
+<pre class="prettyprint"><code>     &lt;platform name="wp8"&gt;
+              &lt;icon src="res/wp/ApplicationIcon.png" width="99" height="99" /&gt;
+              &lt;!-- tile image --&gt;
+              &lt;icon src="res/wp/Background.png" width="159" height="159" /&gt;
+     &lt;/platform&gt;
+</code></pre>
+
+<p>Windows8</p>
+
+<pre class="prettyprint"><code>     &lt;platform name="windows8"&gt;
+              &lt;icon src="res/windows8/logo.png" width="150" height="150" /&gt;
+              &lt;icon src="res/windows8/smalllogo.png" width="30" height="30" /&gt;
+              &lt;icon src="res/windows8/storelogo.png" width="50" height="50" /&gt;
+     &lt;/platform&gt;
+</code></pre>
+
+<h2>
+<a name="Icons%20and%20Splash%20Screens_configuring_splash_screens_in_the_cli">Configuring Splash Screens in the CLI</a>
+</h2>
+
+<p>Use the Splashscreen API to enable display of an app's introductory
+splash screen on many platforms.  When working in the CLI, splash
+screen source files are located within the project's <code>www/res/screens</code>
+subdirectory.</p>
+
+<p>Android specifies both portrait- and landscape-oriented splash screen
+images for low, medium, high, and extra-high resolutions:</p>
+
+<pre class="prettyprint"><code>    android/screen-hdpi-landscape.png
+    android/screen-hdpi-portrait.png
+    android/screen-ldpi-landscape.png
+    android/screen-ldpi-portrait.png
+    android/screen-mdpi-landscape.png
+    android/screen-mdpi-portrait.png
+    android/screen-xhdpi-landscape.png
+    android/screen-xhdpi-portrait.png
+</code></pre>
+
+<p>The iOS platform specifies variants for iPhone/iPod and iPad, with
+variants for retina displays and different orientations. The <em>568h</em>
+file applies to the iPhone 5's taller screen:</p>
+
+<pre class="prettyprint"><code>    ios/screen-ipad-landscape-2x.png
+    ios/screen-ipad-landscape.png
+    ios/screen-ipad-portrait-2x.png
+    ios/screen-ipad-portrait.png
+    ios/screen-iphone-landscape-2x.png
+    ios/screen-iphone-landscape.png
+    ios/screen-iphone-portrait-2x.png
+    ios/screen-iphone-portrait.png
+    ios/screen-iphone-portrait-568h-2x.png
+</code></pre>
+
+<p>Windows Phone specifies a single splash screen image:</p>
+
+<pre class="prettyprint"><code>    windows-phone/screen-portrait.jpg
+</code></pre>
+
+<p>The following sections detail how to set up splash screens when
+working with SDKs and related command-line tools described in <a href="#Platform%0AGuides">Platform
+Guides</a>.</p>
+
+<p>Don't forget to install the SplashScreen plugin before trying to use the
+<code>navigator.splashscreen.hide()</code> or <code>navigator.splashscreen.show()</code> methods.</p>
+
+<h2>
+<a name="Icons%20and%20Splash%20Screens_splash_screens_for_the_android_platform">Splash Screens for the Android Platform</a>
+</h2>
+
+<p>Place <a class="external" href="https://developer.android.com/tools/help/draw9patch.html">9-patch image</a>
+files in the Android project's <code>platforms/android/res/drawable*</code> directories.</p>
+
+<p>The size for each should be:</p>
+
+<ul>
+<li>xlarge (xhdpi): at least 960 × 720</li>
+<li>large (hdpi): at least 640 × 480</li>
+<li>medium (mdpi): at least 470 × 320</li>
+<li>small (ldpi): at least 426 × 320</li>
+</ul>
+<p>When creating a new Android project, the default splash screen images
+provided in the Cordova sample app should already be present in the
+<code>platforms/android/res/drawable*</code> directories. Feel free to replace these
+with your own images.
+When providing your own splash screen images, you do not need to 
+provide the same permutation of 8 as the Cordova default ones
+here.  More or less optimization can be used. 
+The <code>drawable</code> directory names must follow the Android conventions for
+supporting
+<a class="external" href="http://developer.android.com/guide/practices/screens_support.html">screen sizes</a> and
+<a class="external" href="http://developer.android.com/guide/topics/resources/providing-resources.html#AlternativeResources">alternate resources</a>.</p>
+
+<p>In the top-level <code>config.xml</code> file (not the one in <code>platforms</code>), add the
+following preferences:</p>
+
+<pre class="prettyprint"><code>&lt;preference name="SplashScreen" value="screen" /&gt;
+&lt;preference name="SplashScreenDelay" value="10000" /&gt;
+</code></pre>
+
+<p>The first line sets the image to display as the splash screen. This is the
+file name of the png in the <code>drawable*</code> directories, minus the <code>.png</code>
+extension. The default value for SplashScreen is <code>screen</code> (for the file
+<code>platforms/android/res/drawable*/screen.png</code>), so if you
+name the image anything other than <code>screen.png</code> in the <code>drawable*</code> directories,
+you need to add/modify this line.</p>
+
+<p>The second line sets the default delay of how long the splashscreen appears in
+milliseconds. This should be the worst-case expected start time.
+The default value for SplashScreenDelay is 3000 ms.</p>
+
+<p>Finally, as a best practice, the splash screen should be present only as long
+as necessary. When your app has started and the webview has loaded, your app
+should hide the splash screen so that your main view is visible as soon as it
+is ready. Because the app start time will vary quite a bit due to a number of
+factors such as CPU speed and network, it is recommended that your app
+explicitly invoke <code>navigator.splashscreen.hide()</code> in the JavaScript
+method that responds to the <code><a href="cordova_events_events.md.html#deviceready">deviceready</a></code> event. Otherwise the splash screen
+will be visible for the SplashScreenDelay value that you configured above,
+which is likely longer than necessary.
+This event-driven approach is highly recommended versus having the splash
+screen visible for always a fixed duration.</p>
+
+<h2>
+<a name="Icons%20and%20Splash%20Screens_splash_screens_for_the_ios_platform">Splash Screens for the iOS Platform</a>
+</h2>
+
+<p>Copy splash screen images into the iOS project's <code>Resources/splash</code>
+directory. Only add those images for the devices you want to support,
+such as iPad or iPhone. The size of each image should be:</p>
+
+<ul>
+<li>Default-568h@2x~iphone.png (640x1136 pixels)</li>
+<li>Default-Landscape@2x~ipad.png (2048x1496 pixels)</li>
+<li>Default-Landscape~ipad.png (1024x748 pixels)</li>
+<li>Default-Portrait@2x~ipad.png (1536x2008 pixels)</li>
+<li>Default-Portrait~ipad.png (768x1004 pixels)</li>
+<li>Default@2x~iphone.png (640x960 pixels)</li>
+<li>Default~iphone.png (320x480 pixels)</li>
+</ul>
+<h2>
+<a name="Icons%20and%20Splash%20Screens_splash_screens_for_the_blackberry_10_platform">Splash Screens for the BlackBerry 10 Platform</a>
+</h2>
+
+<p>Add a rim:splash element to config.xml for each resolution and locale you wish
+to support:</p>
+
+<p><a class="external" href="http://developer.blackberry.com/html5/documentation/rim_splash_element.html">http://developer.blackberry.com/html5/documentation/rim_splash_element.html</a></p>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

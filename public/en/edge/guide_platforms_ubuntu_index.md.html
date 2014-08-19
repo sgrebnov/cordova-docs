@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="Chinese" value="zh">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="English" value="en">
+<option selected value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.3.0">3.3.0</option>
+<option value="3.2.0">3.2.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="3.0.0">3.0.0</option>
+<option value="2.9.0">2.9.0</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="French" value="fr">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="German" value="de">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Italian" value="it">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Japanese" value="ja">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="ko">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="2.0.0">2.0.0</option>
+</optgroup>
+<optgroup label="Polish" value="pl"><option value="edge">edge</option></optgroup>
+<optgroup label="Russian" value="ru">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Slovenian" value="sl">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+</optgroup>
+<optgroup label="Spanish" value="es">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Ubuntu Platform Guide</h1>
+            <small><select><option value="Ubuntu%2520Platform%2520Guide">Ubuntu Platform Guide</option>
+<option value="Ubuntu%20Platform%20Guide_initial_release">      - Initial Release</option>
+<option value="Ubuntu%20Platform%20Guide_development_platform_requirements">      - Development Platform Requirements</option>
+<option value="Ubuntu%20Platform%20Guide_cordova_installation">      - Cordova Installation</option>
+<option value="Ubuntu%20Platform%20Guide_project_workflow">      - Project Workflow</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>Guides</h1>
+<ul>
+<li><a href="guide_overview_index.md.html#Overview">Overview</a></li>
+<li><a href="guide_support_index.md.html#Platform%20Support">Platform Support</a></li>
+<li><a href="guide_cli_index.md.html#The%20Command-Line%20Interface">The Command-Line Interface</a></li>
+<li><a href="guide_platforms_index.md.html#Platform%20Guides">Platform Guides</a></li>
+<li><a href="plugin_ref_plugman.md.html#Using%20Plugman%20to%20Manage%20Plugins">Using Plugman to Manage Plugins</a></li>
+<li><a href="config_ref_index.md.html#The%20config.xml%20File">The config.xml File</a></li>
+<li><a href="config_ref_images.md.html#Icons%20and%20Splash%20Screens">Icons and Splash Screens</a></li>
+<li><a href="guide_hybrid_webviews_index.md.html#Embedding%20WebViews">Embedding WebViews</a></li>
+<li><a href="guide_hybrid_plugins_index.md.html#Plugin%20Development%20Guide">Plugin Development Guide</a></li>
+<li><a href="guide_appdev_privacy_index.md.html#Privacy%20Guide">Privacy Guide</a></li>
+<li><a href="guide_appdev_security_index.md.html#Security%20Guide">Security Guide</a></li>
+<li><a href="guide_appdev_whitelist_index.md.html#Whitelist%20Guide">Whitelist Guide</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+<li><a href="guide_next_index.md.html#Next%20Steps">Next Steps</a></li>
+<li><a href="_index.html">Keyword Index</a></li>
+</ul>
+<h1>API Reference</h1>
+<ul>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_plugins_pluginapis.md.html#Plugin%20APIs">Plugin APIs</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Ubuntu%20Platform%20Guide">Ubuntu Platform Guide</a></h1>
+
+<h2>
+<a name="Ubuntu%20Platform%20Guide_initial_release">Initial Release</a>
+</h2>
+
+<p>Welcome to the initial release of Ubuntu platform support in
+Cordova. With this release, the focus is developing on an Ubuntu
+system and using the cross-platform workflow discussed in the
+<a href="guide_overview_index.md.html#Overview">Overview</a>.  This includes adding the Ubuntu platform to your project,
+adding standard Cordova plugins, and building and running apps for the
+Ubuntu platform.</p>
+
+<h3>Ubuntu SDK</h3>
+
+<p>You may also want to install the Ubuntu QtCreator development environment. See
+<a class="external" href="http://developer.ubuntu.com">developer.ubuntu.com</a> for more info. (The
+QtCreator SDK is not required to add Ubuntu platform support to your Cordova
+app.)</p>
+
+<h3>Ubuntu Runtime Platforms</h3>
+
+<p>Ubuntu is well known for its Desktop environment (for laptops, PCs and such).
+Ubuntu Touch extends the Ubuntu OS onto phones and tablets. Ubuntu runtime
+platforms have varying CPU architectures (x86, armhf, etc.). App and plugin
+code must be compiled appropriately. Support for this broad area is rapidly
+evolving in Ubuntu.</p>
+
+<h3>Latest Information</h3>
+
+<p>For the latest information on Cordova app support for Ubuntu runtime platforms,
+see <a class="external" href="http://wiki.ubuntu.com/Cordova">wiki.ubuntu.com/Cordova</a>.</p>
+
+<h2>
+<a name="Ubuntu%20Platform%20Guide_development_platform_requirements">Development Platform Requirements</a>
+</h2>
+
+<p>For this initial release, the development platform should be an Ubuntu Desktop.
+Ubuntu 13.10 (codename ‘saucy’) or later is required to enjoy the full set of
+supported capabilities.</p>
+
+<p>You can install Cordova on non-Ubuntu systems (using npm), but important
+capabilities are only provided through Ubuntu debian packages at this time.</p>
+
+<h2>
+<a name="Ubuntu%20Platform%20Guide_cordova_installation">Cordova Installation</a>
+</h2>
+
+<p>Add the Ubuntu Cordova
+<a class="external" href="https://launchpad.net/~cordova-ubuntu/+archive/ppa">Personal Package Archive</a>
+to your Ubuntu system:</p>
+
+<pre class="prettyprint"><code>$ sudo add-apt-repository ppa:cordova-ubuntu/ppa
+$ sudo apt-get update
+</code></pre>
+
+<p>Install cordova-cli package (and its dependencies):</p>
+
+<pre class="prettyprint"><code>$ sudo apt-get install cordova-cli
+</code></pre>
+
+<h2>
+<a name="Ubuntu%20Platform%20Guide_project_workflow">Project Workflow</a>
+</h2>
+
+<h3>Create a project</h3>
+
+<p>Creates an app in a <code>hello</code> directory whose display name is
+<code>HelloWorld</code>:</p>
+
+<pre class="prettyprint"><code>$ cordova create hello com.example.hello HelloWorld
+</code></pre>
+
+<h3>Move into the Project Directory</h3>
+
+<pre class="prettyprint"><code>$ cd hello
+</code></pre>
+
+<h3>Add the Ubuntu Platform</h3>
+
+<pre class="prettyprint"><code>$ cordova platform add ubuntu
+</code></pre>
+
+<h3>Build for Ubuntu</h3>
+
+<pre class="prettyprint"><code>$ cordova build ubuntu
+</code></pre>
+
+<h3>Run the App</h3>
+
+<pre class="prettyprint"><code>$ cordova run ubuntu
+</code></pre>
+
+<h3>Add the Battery Status Plugin</h3>
+
+<pre class="prettyprint"><code>$ cordova plugin add org.apache.cordova.battery-status
+</code></pre>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

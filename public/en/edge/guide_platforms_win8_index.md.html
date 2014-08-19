@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="Chinese" value="zh">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="English" value="en">
+<option selected value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.3.0">3.3.0</option>
+<option value="3.2.0">3.2.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="3.0.0">3.0.0</option>
+<option value="2.9.0">2.9.0</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="French" value="fr">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="German" value="de">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Italian" value="it">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Japanese" value="ja">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="ko">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="2.0.0">2.0.0</option>
+</optgroup>
+<optgroup label="Polish" value="pl"><option value="edge">edge</option></optgroup>
+<optgroup label="Russian" value="ru">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Slovenian" value="sl">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+</optgroup>
+<optgroup label="Spanish" value="es">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Windows Platform Guide</h1>
+            <small><select><option value="Windows%2520Platform%2520Guide">Windows Platform Guide</option>
+<option value="Windows%20Platform%20Guide_requirements_and_support">      - Requirements and Support</option>
+<option value="Windows%20Platform%20Guide_using_cordova_shell_tools">      - Using Cordova Shell Tools</option>
+<option value="Windows%20Platform%20Guide_install_the_sdk">      - Install the SDK</option>
+<option value="Windows%20Platform%20Guide_create_a_new_project">      - Create a New Project</option>
+<option value="Windows%20Platform%20Guide_build_the_project">      - Build the Project</option>
+<option value="Windows%20Platform%20Guide_configure_target_windows_version">      - Configure target Windows version</option>
+<option value="Windows%20Platform%20Guide_deploy_the_app">      - Deploy the app</option>
+<option value="Windows%20Platform%20Guide_open_the_project_in_the_sdk_and_deploy_the_app">      - Open the Project in the SDK and Deploy the App</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>Guides</h1>
+<ul>
+<li><a href="guide_overview_index.md.html#Overview">Overview</a></li>
+<li><a href="guide_support_index.md.html#Platform%20Support">Platform Support</a></li>
+<li><a href="guide_cli_index.md.html#The%20Command-Line%20Interface">The Command-Line Interface</a></li>
+<li><a href="guide_platforms_index.md.html#Platform%20Guides">Platform Guides</a></li>
+<li><a href="plugin_ref_plugman.md.html#Using%20Plugman%20to%20Manage%20Plugins">Using Plugman to Manage Plugins</a></li>
+<li><a href="config_ref_index.md.html#The%20config.xml%20File">The config.xml File</a></li>
+<li><a href="config_ref_images.md.html#Icons%20and%20Splash%20Screens">Icons and Splash Screens</a></li>
+<li><a href="guide_hybrid_webviews_index.md.html#Embedding%20WebViews">Embedding WebViews</a></li>
+<li><a href="guide_hybrid_plugins_index.md.html#Plugin%20Development%20Guide">Plugin Development Guide</a></li>
+<li><a href="guide_appdev_privacy_index.md.html#Privacy%20Guide">Privacy Guide</a></li>
+<li><a href="guide_appdev_security_index.md.html#Security%20Guide">Security Guide</a></li>
+<li><a href="guide_appdev_whitelist_index.md.html#Whitelist%20Guide">Whitelist Guide</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+<li><a href="guide_next_index.md.html#Next%20Steps">Next Steps</a></li>
+<li><a href="_index.html">Keyword Index</a></li>
+</ul>
+<h1>API Reference</h1>
+<ul>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_plugins_pluginapis.md.html#Plugin%20APIs">Plugin APIs</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Windows%20Platform%20Guide">Windows Platform Guide</a></h1>
+
+<p>This guide shows how to set up your SDK development environment to build 
+and deploy Cordova apps for Windows 8, Windows 8.1 and Windows Phone 8.1.
+It shows how to use either shell tools to generate and build apps, or 
+the cross-platform Cordova CLI discussed in <a href="guide_cli_index.md.html#The%20Command-Line%20Interface">The Command-Line Interface</a>.
+(See the <a href="guide_overview_index.md.html#Overview">Overview</a> for a comparison of these development options.) This
+section also shows how to modify Cordova apps within Visual Studio.
+Regardless of which approach you take, you need to install the 
+Visual Studio SDK, as described below.</p>
+
+<p>See <a href="guide_platforms_win8_upgrade.md.html#Upgrading%20Windows%208">Upgrading Windows 8</a> for information on how to upgrade existing
+Windows 8 Cordova projects.</p>
+
+<p>Window Phone 8 (wp8) stays as a separate platform,
+see <a href="guide_platforms_wp8_index.md.html#Windows%20Phone%208%20Platform%20Guide">Windows Phone 8 Platform Guide</a> for details.</p>
+
+<p>Cordova WebViews running on Windows rely on Internet Explorer 10 (Windows 8)
+and Internet Explorer 11 (Windows 8.1 and Windows Phone 8.1) as
+their rendering engine, so as a practical matter you can use IE's
+powerful debugger to test any web content that doesn't invoke Cordova
+APIs.  The Windows Phone Developer Blog provides
+<a class="external" href="http://blogs.windows.com/windows_phone/b/wpdev/archive/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10.aspx">helpful guidance</a>
+on how to support IE along with comparable WebKit browsers.</p>
+
+<h2>
+<a name="Windows%20Platform%20Guide_requirements_and_support">Requirements and Support</a>
+</h2>
+
+<p>You need one of the following OS/SDK combinations, either from an
+installation disk or an <em>ISO</em> disk image file.</p>
+
+<p>To develop apps for Windows 8.0 only:</p>
+
+<ul>
+<li>Windows 8.0 or 8.1, 32 or 64-bit <em>Home</em>, <em>Pro</em>, or <em>Enterprise</em>
+editions, along with
+<a class="external" href="http://www.visualstudio.com/downloads">Visual Studio 2012 Express</a>.</li>
+</ul>
+<p>To develop apps for all platforms (Windows 8.0, Windows 8.1 and Windows Phone 8.1):</p>
+
+<ul>
+<li>Windows 8.1, 32 or 64-bit <em>Home</em>, <em>Pro</em>, or <em>Enterprise</em> editions,
+along with 
+<a class="external" href="http://www.visualstudio.com/downloads">Visual Studio 2013 Express</a>
+or higher. An evaluation version of Windows 8.1 Enterprise is
+available from the
+<a class="external" href="http://msdn.microsoft.com/en-US/evalcenter/jj554510">Microsoft Developer Network</a>.</li>
+</ul>
+<p>Apps compiled under Windows 8.1 do <em>not</em> run under Windows 8.0. Apps
+compiled under Windows 8.0 are forward-compatible with 8.1.</p>
+
+  <!-- 64-bit necessary? Pro necessary? ELSE still recommended for parallel WP dev -->
+
+<p>Follow the instructions at
+<a class="external" href="http://www.windowsstore.com/">windowsstore.com</a>
+to submit the app to Windows Store.</p>
+
+  <!-- true? -->
+
+<p>To develop Cordova apps for Windows, you may use a PC running
+Windows, but you may also develop on a Mac, either by running a
+virtual machine environment or by using Boot Camp to dual-boot a
+Windows 8.1 partition. Consult these resources to set up the required
+Windows development environment on a Mac:</p>
+
+<ul>
+<li><p><a class="external" href="http://msdn.microsoft.com/en-US/library/windows/apps/jj945426">VMWare Fusion</a></p></li>
+<li><p><a class="external" href="http://msdn.microsoft.com/en-US/library/windows/apps/jj945424">Parallels Desktop</a>,</p></li>
+<li><p><a class="external" href="http://msdn.microsoft.com/en-US/library/windows/apps/jj945423">Boot Camp</a>.</p></li>
+</ul>
+<h2>
+<a name="Windows%20Platform%20Guide_using_cordova_shell_tools">Using Cordova Shell Tools</a>
+</h2>
+
+<p>If you want to use Cordova's Windows-centered shell tools in
+conjunction with the SDK, you have two basic options:</p>
+
+<ul>
+<li><p>Access them locally from project code generated by the CLI. They are
+available in the <code>platforms/windows/cordova</code> directory after you add
+the <code>windows</code> platform as described below.</p></li>
+<li><p>Download them from a separate distribution at
+<a class="external" href="http://cordova.apache.org">cordova.apache.org</a>.  The Cordova
+distribution contains separate archives for each platform.  Be sure
+to expand the appropriate archive, <code>cordova-windows\windows</code> in
+this case, within an empty directory.  The relevant batch utilities
+are available in the top-level <code>bin</code> directory. (Consult the
+<strong>README</strong> file if necessary for more detailed directions.)</p></li>
+</ul>
+<p>These shell tools allow you to create, build, and run Windows apps.
+For information on the additional command-line interface that enables
+plugin features across all platforms, see <a href="#Using%20Plugman%20to%20Manage%0APlugins">Using Plugman to Manage
+Plugins</a>.</p>
+
+<h2>
+<a name="Windows%20Platform%20Guide_install_the_sdk">Install the SDK</a>
+</h2>
+
+<p>Install the <em>Ultimate</em>, <em>Premium</em>, or <em>Professional</em> 2013 editions of
+<a class="external" href="http://www.visualstudio.com/downloads">Visual Studio</a>.</p>
+
+<p><img src="img/guide/platforms/win8/win8_installSDK.png" alt="" title=""></p>
+
+<h2>
+<a name="Windows%20Platform%20Guide_create_a_new_project">Create a New Project</a>
+</h2>
+
+<p>At this point, to create a new project you can choose between the
+cross-platform CLI tool described in <a href="guide_cli_index.md.html#The%20Command-Line%20Interface">The Command-Line Interface</a>, or
+the set of Windows-specific shell tools. From within a source-code
+directory, this CLI approach generates an app named <em>HelloWorld</em>
+within a new <code>hello</code> project directory:</p>
+
+<pre class="prettyprint"><code>    &gt; cordova create hello com.example.hello HelloWorld
+    &gt; cd hello
+    &gt; cordova platform add windows
+    &gt; cordova build
+</code></pre>
+
+<p>Here's the corresponding lower-level shell-tool approach:</p>
+
+<pre class="prettyprint"><code>    C:\path\to\cordova-win\bin\create.bat C:\path\to\new\hello com.example.hello HelloWorld
+</code></pre>
+
+<h2>
+<a name="Windows%20Platform%20Guide_build_the_project">Build the Project</a>
+</h2>
+
+<p>If you are using the CLI in development, the project directory's
+top-level <code>www</code> directory contains the source files. Run either of
+these within the project directory to rebuild the app:</p>
+
+<pre class="prettyprint"><code>    &gt; cordova build
+    &gt; cordova build windows   # do not rebuild other platforms
+</code></pre>
+
+<p>Once you generate the project, the default app's source is available in the
+<code>projects\windows\www</code> subdirectory. Subsequent commands are available in
+the <code>cordova</code> subdirectory at the same level.</p>
+
+<p>The <code>build</code> command cleans project files and rebuilds the app.  The first
+example generates debugging information, and the second signs the apps
+for release:</p>
+
+<pre class="prettyprint"><code>    C:\path\to\project\cordova\build.bat --debug        
+    C:\path\to\project\cordova\build.bat --release
+</code></pre>
+
+<p>The <code>clean</code> command helps flush out directories in preparation for the
+next <code>build</code>:</p>
+
+<pre class="prettyprint"><code>    C:\path\to\project\cordova\clean.bat
+</code></pre>
+
+<h2>
+<a name="Windows%20Platform%20Guide_configure_target_windows_version">Configure target Windows version</a>
+</h2>
+
+<p>By default <code>build</code> command produces two packages: Windows 8.0 and Windows Phone 8.1.
+To upgrade Windows package to version 8.1 the following configuration setting must be 
+added to configuration file (<code>config.xml</code>).</p>
+
+<pre class="prettyprint"><code>    &lt;preference name='windows-target-version' value='8.1' /&gt;
+</code></pre>
+
+<p>Once you add this setting <code>build</code> command will start producing Windows 8.1 
+and Windows Phone 8.1 packages.</p>
+
+<h2>
+<a name="Windows%20Platform%20Guide_deploy_the_app">Deploy the app</a>
+</h2>
+
+<p>To deploy Windows Phone package:</p>
+
+<pre class="prettyprint"><code>    &gt; cordova run windows -- --phone  # deploy app to Windows Phone 8.1 emulator
+    &gt; cordova run windows --device -- --phone  # deploy app to connected device
+</code></pre>
+
+<p>To deploy Windows package:</p>
+
+<pre class="prettyprint"><code>    &gt; cordova run windows -- --win  # explicitly specify Windows as deployment target
+    &gt; cordova run windows # `run` uses Windows package by default
+</code></pre>
+
+<h2>
+<a name="Windows%20Platform%20Guide_open_the_project_in_the_sdk_and_deploy_the_app">Open the Project in the SDK and Deploy the App</a>
+</h2>
+
+<p>Once you build a Cordova app as described above, you can open it with
+Visual Studio. The various <code>build</code> commands generate a Visual Studio
+Solution (<em>.sln</em>) file. Open the file in the File Explorer to modify
+the project within Visual Studio:</p>
+
+<p><img src="img/guide/platforms/win8/win8_sdk_openSLN.png" alt="" title=""></p>
+
+<p>The <code>CordovaApp</code> component displays within the solution, and its <code>www</code>
+directory contains the web-based source code, including the
+<code>index.html</code> home page:</p>
+
+<p><img src="img/guide/platforms/win8/win8_sdk.png" alt="" title=""></p>
+
+<p>The controls below Visual Studio's main menu allow you to test or
+deploy the app:</p>
+
+<p><img src="img/guide/platforms/win8/win8_sdk_deploy.png" alt="" title=""></p>
+
+<p>With <strong>Local Machine</strong> selected, press the green arrow to install the
+app on the same machine running Visual Studio. Once you do so, the app
+appears in Windows 8's app listings:</p>
+
+<p><img src="img/guide/platforms/win8/win8_sdk_runApp.png" alt="" title=""></p>
+
+<p>Each time you rebuild the app, the version available in the interface
+is refreshed.</p>
+
+<p>Once available in the app listings, holding down the <strong>CTRL</strong> key
+while selecting the app allows you to pin it to the main screen:</p>
+
+<p><img src="img/guide/platforms/win8/win8_sdk_runHome.png" alt="" title=""></p>
+
+<p>Note that if you open the app within a virtual machine environment,
+you may need to click in the corners or along the sides of the windows
+to switch apps or access additional functionality:</p>
+
+<p><img src="img/guide/platforms/win8/win8_sdk_run.png" alt="" title=""></p>
+
+<p>Alternately, choose the <strong>Simulator</strong> deployment option to view the
+app as if it were running on a tablet device:</p>
+
+<p><img src="img/guide/platforms/win8/win8_sdk_sim.png" alt="" title=""></p>
+
+<p>Unlike desktop deployment, this option allows you to simulate the
+tablet's orientation, location, and vary its network settings.</p>
+
+<p><strong>NOTE</strong>: Consult the <a href="guide_overview_index.md.html#Overview">Overview</a> for advice on how to use Cordova's
+command-line tools or the SDK in your workflow. The Cordova CLI relies
+on cross-platform source code that routinely overwrites the
+platform-specific files used by the SDK. If you want to use the SDK to
+modify the project, use the lower-level shell tools as an alternative
+to the CLI.</p>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

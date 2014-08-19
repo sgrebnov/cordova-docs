@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="Chinese" value="zh">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="English" value="en">
+<option selected value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.3.0">3.3.0</option>
+<option value="3.2.0">3.2.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="3.0.0">3.0.0</option>
+<option value="2.9.0">2.9.0</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="French" value="fr">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="German" value="de">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Italian" value="it">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Japanese" value="ja">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="ko">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="2.0.0">2.0.0</option>
+</optgroup>
+<optgroup label="Polish" value="pl"><option value="edge">edge</option></optgroup>
+<optgroup label="Russian" value="ru">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Slovenian" value="sl">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+</optgroup>
+<optgroup label="Spanish" value="es">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Android Platform Guide</h1>
+            <small><select><option value="Android%2520Platform%2520Guide">Android Platform Guide</option>
+<option value="Android%20Platform%20Guide_requirements_and_support">      - Requirements and Support</option>
+<option value="Android%20Platform%20Guide_install_cordova_shell_tools">      - Install Cordova Shell Tools</option>
+<option value="Android%20Platform%20Guide_open_a_new_project_in_the_sdk">      - Open a New Project in the SDK</option>
+<option value="Android%20Platform%20Guide_build_the_project">      - Build the Project</option>
+<option value="Android%20Platform%20Guide_configure_an_emulator">      - Configure an Emulator</option>
+<option value="Android%20Platform%20Guide_deploy_to_emulator">      - Deploy to Emulator</option>
+<option value="Android%20Platform%20Guide_deploy_to_device">      - Deploy to Device</option>
+<option value="Android%20Platform%20Guide_other_commands">      - Other Commands</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>Guides</h1>
+<ul>
+<li><a href="guide_overview_index.md.html#Overview">Overview</a></li>
+<li><a href="guide_support_index.md.html#Platform%20Support">Platform Support</a></li>
+<li><a href="guide_cli_index.md.html#The%20Command-Line%20Interface">The Command-Line Interface</a></li>
+<li><a href="guide_platforms_index.md.html#Platform%20Guides">Platform Guides</a></li>
+<li><a href="plugin_ref_plugman.md.html#Using%20Plugman%20to%20Manage%20Plugins">Using Plugman to Manage Plugins</a></li>
+<li><a href="config_ref_index.md.html#The%20config.xml%20File">The config.xml File</a></li>
+<li><a href="config_ref_images.md.html#Icons%20and%20Splash%20Screens">Icons and Splash Screens</a></li>
+<li><a href="guide_hybrid_webviews_index.md.html#Embedding%20WebViews">Embedding WebViews</a></li>
+<li><a href="guide_hybrid_plugins_index.md.html#Plugin%20Development%20Guide">Plugin Development Guide</a></li>
+<li><a href="guide_appdev_privacy_index.md.html#Privacy%20Guide">Privacy Guide</a></li>
+<li><a href="guide_appdev_security_index.md.html#Security%20Guide">Security Guide</a></li>
+<li><a href="guide_appdev_whitelist_index.md.html#Whitelist%20Guide">Whitelist Guide</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+<li><a href="guide_next_index.md.html#Next%20Steps">Next Steps</a></li>
+<li><a href="_index.html">Keyword Index</a></li>
+</ul>
+<h1>API Reference</h1>
+<ul>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_plugins_pluginapis.md.html#Plugin%20APIs">Plugin APIs</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Android%20Platform%20Guide">Android Platform Guide</a></h1>
+
+<p>This guide shows how to set up your SDK environment to deploy Cordova
+apps for Android devices, and how to optionally use Android-centered
+command-line tools in your development workflow.  You need to install
+the Android SDK regardless of whether you want to use these
+platform-centered shell tools or cross-platform Cordova CLI for
+development. For a comparison of the two development paths, see the
+<a href="guide_overview_index.md.html#Overview">Overview</a>.  For details on the CLI, see <a href="guide_cli_index.md.html#The%20Command-Line%20Interface">The Command-Line Interface</a>.</p>
+
+<h2>
+<a name="Android%20Platform%20Guide_requirements_and_support">Requirements and Support</a>
+</h2>
+
+<p>Cordova for Android requires the Android SDK. See the Android SDK's
+<a class="external" href="http://developer.android.com/sdk/index.html">System Requirements</a>.</p>
+
+<p>Cordova supports Android 2.3.x (Gingerbread, starting with Android API level 10)
+and 4.x.  As a general rule, Android versions become unsupported by Cordova as
+they dip below 5% on Google's
+<a class="external" href="http://developer.android.com/about/dashboards/index.html">distribution dashboard</a>.
+Android versions earlier than API level 10, and the 3.x versions (Honeycomb,
+API levels 11-13) fall significantly below that 5% threshold.</p>
+
+<h2>
+<a name="Android%20Platform%20Guide_install_cordova_shell_tools">Install Cordova Shell Tools</a>
+</h2>
+
+<p>If you want to use Cordova's Android-centered shell tools in
+conjunction with the SDK, download Cordova from
+<a class="external" href="http://cordova.apache.org">cordova.apache.org</a>. Otherwise ignore this
+section if you plan to use the cross-platform CLI tool described in
+<a href="guide_cli_index.md.html#The%20Command-Line%20Interface">The Command-Line Interface</a>.</p>
+
+<p>The Cordova download contains separate archives for each platform. Be
+sure to expand the appropriate archive, <code>android</code> in this case, within
+an empty directory.  The relevant executible utilities are available
+in the top-level <code>bin</code> directory. (Consult the <strong>README</strong> file if
+necessary for more detailed directions.)</p>
+
+<p>These shell tools allow you to create, build, and run Android apps.
+For information on the additional command-line interface that enables
+plugin features across all platforms, see <a href="#Using%20Plugman%20to%20Manage%0APlugins">Using Plugman to Manage
+Plugins</a>. See Application Plugins for details on how to develop
+plugins.</p>
+
+<p>Install the Android SDK from
+<a class="external" href="http://developer.android.com/sdk/">developer.android.com/sdk</a>. The android sdk
+is distributed as an 'adt-bundle-&lt;os&gt;-&lt;arch&gt;-&lt;ver&gt;' file.
+On windows, the adt-bundle is packaged with an installer.
+On OSX and Linux, simply unpack the 'adt-bundle' in the location you store development tools. 
+<a class="external" href="http://developer.android.com/sdk/installing/bundle.html">More detailed information on Android SDK setup can be found here</a></p>
+
+<p>For Cordova command-line tools to work, or the CLI that is based upon
+them, you need to include the SDK's <code>tools</code> and <code>platform-tools</code>
+directories in your <code>PATH</code>.  On a Mac, you can use a text editor to
+create or modify the <code>~/.bash_profile</code> file, adding a line such as the
+following, depending on where the SDK installs:</p>
+
+<pre class="prettyprint"><code>    export PATH=${PATH}:/Development/adt-bundle/sdk/platform-tools:/Development/adt-bundle/sdk/tools
+</code></pre>
+
+<p>Add the paths for <code>java</code> and <code>ant</code> if needed. This line in <code>~/.bash_profile</code>
+exposes these tools in newly opened terminal windows. If your terminal
+window is already open in OSX, or to avoid a logout/login on Linux, run
+this to make them available in the current terminal window:</p>
+
+<pre class="prettyprint"><code>    $ source ~/.bash_profile
+</code></pre>
+
+<p>To modify the <code>PATH</code> environment on Windows 7:</p>
+
+<ol>
+<li><p>Click on the <strong>Start</strong> menu in the lower-left corner of the desktop,
+right-click on <strong>Computer</strong>, then select <strong>Properties</strong>.</p></li>
+<li><p>Select <strong>Advanced System Settings</strong> in the column on the left.</p></li>
+<li><p>In the resulting dialog box, press <strong>Environment Variables</strong>.</p></li>
+<li><p>Select the <strong>PATH</strong> variable and press <strong>Edit</strong>.</p></li>
+<li>
+<p>Append the following to the <code>PATH</code> based on where you installed the
+SDK, for example:</p>
+
+<pre class="prettyprint"><code>;C:\Development\adt-bundle\sdk\platform-tools;C:\Development\adt-bundle\sdk\tools
+</code></pre>
+</li>
+<li><p>Save the value and close both dialog boxes.</p></li>
+</ol>
+<p>You may also need to enable Java and Ant. Open a command prompt and
+type <code>java</code>, and also type <code>ant</code>. Append to the <code>PATH</code> whichever of
+these fails to run:</p>
+
+<pre class="prettyprint"><code>    ;%JAVA_HOME%\bin;%ANT_HOME%\bin
+</code></pre>
+
+<h2>
+<a name="Android%20Platform%20Guide_open_a_new_project_in_the_sdk">Open a New Project in the SDK</a>
+</h2>
+
+<p>At this point, to create a new project you can choose between the
+cross-platform CLI tool described in <a href="guide_cli_index.md.html#The%20Command-Line%20Interface">The Command-Line Interface</a>, or
+the set of Android-specific shell tools. From within a source-code
+directory, here's the CLI approach:</p>
+
+<pre class="prettyprint"><code>    $ cordova create hello com.example.hello HelloWorld
+    $ cd hello
+    $ cordova platform add android
+    $ cordova build
+</code></pre>
+
+<p>Here's the corresponding lower-level shell-tool approach for both Unix
+and Windows:</p>
+
+<pre class="prettyprint"><code>    $ /path/to/cordova-android/bin/create /path/to/new/hello com.example.hello HelloWorld
+    C:\path\to\cordova-android\bin\create.bat C:\path\to\new\hello com.example.hello HelloWorld
+</code></pre>
+
+<p>Here's how to use the SDK to modify it:</p>
+
+<ol>
+<li><p>Launch the <strong>Eclipse</strong> application.</p></li>
+<li><p>Select the <strong>New Project</strong> menu item.</p></li>
+<li>
+<p>Choose <strong>Android Project from Existing Code</strong> from the resulting
+dialog box, and press <strong>Next</strong>:</p>
+
+<p><img src="img/guide/platforms/android/eclipse_new_project.png" alt="" title=""></p>
+</li>
+<li><p>If you're using the CLI, navigate to the <code>hello</code> directory you
+created for the project, then to the <code>platforms/android</code>
+subdirectory. Alternately, if you use the <code>create</code> shell utility,
+simply navigate to the <code>hello</code> directory.</p></li>
+<li><p>Press <strong>Finish</strong>.</p></li>
+</ol>
+<p>Once the Eclipse window opens, a red <strong>X</strong> may appear to indicate
+unresolved problems. If so, follow these additional steps:</p>
+
+<ol>
+<li><p>Right-click on the project directory.</p></li>
+<li><p>In the resulting <strong>Properties</strong> dialog, select <strong>Android</strong> from the navigation pane.</p></li>
+<li><p>For the project build target, select the highest Android API level you have installed.</p></li>
+<li><p>Click <strong>OK</strong>.</p></li>
+<li><p>Select <strong>Clean</strong> from the <strong>Project</strong> menu. This should correct all the errors in the project.</p></li>
+</ol>
+<h2>
+<a name="Android%20Platform%20Guide_build_the_project">Build the Project</a>
+</h2>
+
+<p>If you are using the CLI in development, the project directory's
+top-level <code>www</code> directory contains the source files. Run either of
+these within the project directory to rebuild the app:</p>
+
+<pre class="prettyprint"><code>    $ cordova build
+    $ cordova build android   # do not rebuild other platforms
+</code></pre>
+
+<p>If you are using the Android-specific shell tools in development,
+there is a different approach.  Once you generate the project, the
+default app's source is available in the <code>assets/www</code> subdirectory.
+Subsequent commands are available in its <code>cordova</code> subdirectory.</p>
+
+<p>The <code>build</code> command cleans project files and rebuilds the app. Here is
+the syntax for both Mac and Windows. The first pair of examples
+generate debugging information, and the second signs the apps for
+release:</p>
+
+<pre class="prettyprint"><code>    $ /path/to/project/cordova/build --debug
+    C:\path\to\project\cordova\build.bat --debug
+
+    $ /path/to/project/cordova/build --release
+    C:\path\to\project\cordova\build.bat --release
+</code></pre>
+
+<h2>
+<a name="Android%20Platform%20Guide_configure_an_emulator">Configure an Emulator</a>
+</h2>
+
+<p>You can use either the <code>cordova</code> CLI utility or Cordova's
+Android-centered shell tools to run an app in an emulator.  Either
+way, the SDK must first be configured to display at least one device.
+To do so, use the Android SDK Manager, a Java application that runs
+separately from Eclipse.  There are two ways to open it:</p>
+
+<ol>
+<li><p>Run <code>android</code> on the command line.</p></li>
+<li>
+<p>From within Eclipse, press this toolbar icon:</p>
+
+<p><img src="img/guide/platforms/android/eclipse_android_sdk_button.png" alt="" title=""></p>
+</li>
+</ol>
+<p>Once open, the Android SDK Manager displays various runtime libraries:</p>
+
+<p><img src="img/guide/platforms/android/asdk_window.png" alt="" title=""></p>
+
+<p>Choose <strong>Tools → Manage AVDs</strong> (Android Virtual Devices), then
+choose any item from <strong>Device Definitions</strong> in the resulting dialog
+box:</p>
+
+<p><img src="img/guide/platforms/android/asdk_device.png" alt="" title=""></p>
+
+<p>Press <strong>Create AVD</strong>, optionally modifying the name, then press <strong>OK</strong>
+to accept the changes:</p>
+
+<p><img src="img/guide/platforms/android/asdk_newAVD.png" alt="" title=""></p>
+
+<p>The AVD then appears in the <strong>Android Virtual Devices</strong> list:</p>
+
+<p><img src="img/guide/platforms/android/asdk_avds.png" alt="" title=""></p>
+
+<p>To open the emulator as a separate application, select the AVD and
+press <strong>Start</strong>. It launches much as it would on the device, with
+additional controls available for hardware buttons:</p>
+
+<p><img src="img/guide/platforms/android/asdk_emulator.png" alt="" title=""></p>
+
+<h2>
+<a name="Android%20Platform%20Guide_deploy_to_emulator">Deploy to Emulator</a>
+</h2>
+
+<p>At this point you can use the <code>cordova</code> CLI utility to deploy the
+application to the emulator from the command line:</p>
+
+<pre class="prettyprint"><code>    $ cordova emulate android
+</code></pre>
+
+<p>Otherwise use the alternate shell interface:</p>
+
+<pre class="prettyprint"><code>    $ /path/to/project/cordova/run --emulator
+</code></pre>
+
+<p>Instead of relying on whichever emulator is currently enabled within
+the SDK, you can refer to each by the names you supply:</p>
+
+<pre class="prettyprint"><code>    $ /path/to/project/cordova/run --target=NAME
+</code></pre>
+
+<p>This pushes the app to the home screen and launches it:</p>
+
+<p><img src="img/guide/platforms/android/emulator2x.png" alt="" title=""></p>
+
+<p>When you <code>run</code> the app, you also <code>build</code> it. You can append additional
+<code>--debug</code>, <code>--release</code>, and <code>--nobuild</code> flags to control how it is
+built, or even whether a rebuild is necessary:</p>
+
+<pre class="prettyprint"><code>    $ /path/to/project/cordova/run --emulator --nobuild
+</code></pre>
+
+<p>If instead you are working within Eclipse, right-click the project and
+choose <strong>Run As → Android Application</strong>. You may be asked to
+specify an AVD if none are already open.</p>
+
+<p>For a faster experience, you can use the <code>Virtual Machine Acceleration</code> to improve 
+the execution speed.
+Many modern CPUs provide extensions to execute Virtual Machines more efficiently.
+Before attempting to use this type of acceleration, you need to determine if your 
+current development system's CPU, supports one the following virtualization technologies:</p>
+
+<ul>
+<li>
+<strong>Intel Virtualization Technology</strong> (VT-x, vmx) → <a class="external" href="http://ark.intel.com/products/virtualizationtechnology">Intel VT-x supported processor list</a>
+</li>
+<li>
+<strong>AMD Virtualization</strong> (AMD-V, SVM), only supported for Linux (Since May 2006, all CPUs AMD include AMD-V, except Sempron).</li>
+</ul>
+<p>Another way to find out if your Intel processor supports VT-x Technology, it's by executing the 
+<code>Intel Processor Identification Utility</code>, for <code>Windows</code>you can download it from the Intel <a class="external" href="https://downloadcenter.intel.com/Detail_Desc.aspx?ProductID=1881&amp;DwnldID=7838">Download Center</a>,
+or you can use the <a class="external" href="https://downloadcenter.intel.com/Detail_Desc.aspx?ProductID=1881&amp;DwnldID=7840&amp;lang=eng">booteable utility</a>, which is <code>OS Independent</code>.</p>
+
+<p>After install and execute the <code>Intel Processor Identification Utility</code> over Windows, you will get the following window, 
+in order to check if your CPU supports the Virtualization Technologies:</p>
+
+<p><img src="img/guide/platforms/android/intel_pid_util_620px.png" alt="" title=""></p>
+
+<p>In order to speed up the emulator, you need to download and install one or more <code>Intel x86 Atom</code> System Images, 
+as well as the <code>Intel Hardware Accelerated Execution Manager (HAXM)</code>.</p>
+
+<p>Open your Android SDK Manager, and select the <code>Intel x86 Atom</code> System Image, for whichever version that you want to test. Then go to <code>Extras</code> 
+and select <code>Intel x86 Emulator Accelerator (HAXM)</code>, and install those packages:</p>
+
+<p><img src="img/guide/platforms/android/asdk_man_intel_image_haxm.png" alt="" title=""></p>
+
+<p>After download, run the Intel installer, which is available within your
+Android SDK at <code>extras/intel/Hardware_Accelerated_Execution_Manager</code>. 
+<strong>Note</strong>:<code>If you have any problems installing the package, you can find more information and step by step guidance check this</code> 
+<a class="external" href="http://software.intel.com/en-us/android/articles/speeding-up-the-android-emulator-on-intel-architecture">Intel Article</a>.</p>
+
+<ol>
+<li><p>Install one or more <code>Intel x86 Atom</code> System Images as well as the
+<code>Intel Hardware Accelerated Execution Manager</code>, available under
+<strong>Extras</strong>.</p></li>
+<li><p>Run the Intel installer, which is available within your Android SDK
+at <code>extras/intel/Hardware_Accelerated_Execution_Manager</code>.</p></li>
+<li><p>Create a new AVD with the target set to an Intel image.</p></li>
+<li><p>When starting the emulator, ensure there are no error messages
+indicating a failure to load HAX modules.</p></li>
+</ol>
+<h2>
+<a name="Android%20Platform%20Guide_deploy_to_device">Deploy to Device</a>
+</h2>
+
+<p>To push an app directly to the device, make sure USB debugging is
+enabled on your device as described on the
+<a class="external" href="http://developer.android.com/tools/device.html">Android Developer Site</a>,
+and use a mini USB cable to plug it into your system.</p>
+
+<p>You can use this CLI command to push the app to the device:</p>
+
+<pre class="prettyprint"><code>    $ cordova run android
+</code></pre>
+
+<p>...or use this Android-centered shell interface:</p>
+
+<pre class="prettyprint"><code>    $ /path/to/project/cordova/run --device
+</code></pre>
+
+<p>With no flags specified, the <code>run</code> command detects a connected
+device, or a currently running emulator if no device is found,
+otherwise it prompts to specify an emulator.</p>
+
+<p>To run the app from within Eclipse, right-click the project and choose
+<strong>Run As → Android Application</strong>.</p>
+
+<h2>
+<a name="Android%20Platform%20Guide_other_commands">Other Commands</a>
+</h2>
+
+<p>The following generates a detailed log of the app as it runs:</p>
+
+<pre class="prettyprint"><code>    $ /path/to/project/cordova/log
+    C:\path\to\project\cordova\log.bat
+</code></pre>
+
+<p>The following cleans the project files:</p>
+
+<pre class="prettyprint"><code>    $ /path/to/project/cordova/clean
+    C:\path\to\project\cordova\clean.bat
+</code></pre>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

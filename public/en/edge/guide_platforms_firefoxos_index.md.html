@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="Chinese" value="zh">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="English" value="en">
+<option selected value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.3.0">3.3.0</option>
+<option value="3.2.0">3.2.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="3.0.0">3.0.0</option>
+<option value="2.9.0">2.9.0</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="French" value="fr">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="German" value="de">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Italian" value="it">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Japanese" value="ja">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="ko">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+<option value="2.0.0">2.0.0</option>
+</optgroup>
+<optgroup label="Polish" value="pl"><option value="edge">edge</option></optgroup>
+<optgroup label="Russian" value="ru">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup>
+<optgroup label="Slovenian" value="sl">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+</optgroup>
+<optgroup label="Spanish" value="es">
+<option value="edge">edge</option>
+<option value="3.5.0">3.5.0</option>
+<option value="3.4.0">3.4.0</option>
+<option value="3.1.0">3.1.0</option>
+</optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Firefox OS Platform Guide</h1>
+            <small><select><option value="Firefox%2520OS%2520Platform%2520Guide">Firefox OS Platform Guide</option>
+<option value="Firefox%20OS%20Platform%20Guide_requirements_and_support">      - Requirements and Support</option>
+<option value="Firefox%20OS%20Platform%20Guide_installation_and_environment_setup">      - Installation and Environment Setup</option>
+<option value="Firefox%20OS%20Platform%20Guide_developing_your_app">      - Developing your app</option>
+<option value="Firefox%20OS%20Platform%20Guide_testing_and_debugging">      - 
+Testing and Debugging
+</option>
+<option value="Firefox%20OS%20Platform%20Guide_publishing_your_app_on_the_firefox_marketplace">      - Publishing your app on the Firefox Marketplace</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>Guides</h1>
+<ul>
+<li><a href="guide_overview_index.md.html#Overview">Overview</a></li>
+<li><a href="guide_support_index.md.html#Platform%20Support">Platform Support</a></li>
+<li><a href="guide_cli_index.md.html#The%20Command-Line%20Interface">The Command-Line Interface</a></li>
+<li><a href="guide_platforms_index.md.html#Platform%20Guides">Platform Guides</a></li>
+<li><a href="plugin_ref_plugman.md.html#Using%20Plugman%20to%20Manage%20Plugins">Using Plugman to Manage Plugins</a></li>
+<li><a href="config_ref_index.md.html#The%20config.xml%20File">The config.xml File</a></li>
+<li><a href="config_ref_images.md.html#Icons%20and%20Splash%20Screens">Icons and Splash Screens</a></li>
+<li><a href="guide_hybrid_webviews_index.md.html#Embedding%20WebViews">Embedding WebViews</a></li>
+<li><a href="guide_hybrid_plugins_index.md.html#Plugin%20Development%20Guide">Plugin Development Guide</a></li>
+<li><a href="guide_appdev_privacy_index.md.html#Privacy%20Guide">Privacy Guide</a></li>
+<li><a href="guide_appdev_security_index.md.html#Security%20Guide">Security Guide</a></li>
+<li><a href="guide_appdev_whitelist_index.md.html#Whitelist%20Guide">Whitelist Guide</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+<li><a href="guide_next_index.md.html#Next%20Steps">Next Steps</a></li>
+<li><a href="_index.html">Keyword Index</a></li>
+</ul>
+<h1>API Reference</h1>
+<ul>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_plugins_pluginapis.md.html#Plugin%20APIs">Plugin APIs</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Firefox%20OS%20Platform%20Guide">Firefox OS Platform Guide</a></h1>
+
+<p>This guide describes how to set up your development environment to
+create Cordova apps for Firefox OS devices, then test and publish those apps.</p>
+
+<h2>
+<a name="Firefox%20OS%20Platform%20Guide_requirements_and_support">Requirements and Support</a>
+</h2>
+
+<p>Firefox OS apps are basically just web apps, with the addition of a manifest.webapp file that defines metadata about the app and allows it to be installed on Firefox OS devices. Any platform that Cordova supports can be used.To find out more about building web apps, consult the <a class="external" href="https://developer.mozilla.org/en-US/Apps">App Center</a> on <a class="external" href="https://developer.mozilla.org/en-US/">MDN</a>.</p>
+
+<h2>
+<a name="Firefox%20OS%20Platform%20Guide_installation_and_environment_setup">Installation and Environment Setup</a>
+</h2>
+
+<p>First install <a class="external" href="http://nodejs.org/">Node.js</a>, then install the Cordova package like so:</p>
+
+<pre class="prettyprint"><code>$ npm install -g cordova
+</code></pre>
+
+<p>Next, create a sample Cordova app then navigate into the newly created directory:</p>
+
+<pre class="prettyprint"><code>$ cordova create test-app
+$ cd test-app
+</code></pre>
+
+<p>Add Firefox OS as a supported platform to the app with the following:</p>
+
+<pre class="prettyprint"><code>$ cordova platform add firefoxos
+</code></pre>
+
+<p>This creates a Firefox OS app in platforms/firefoxos/www directory, which currently looks the same except that it has a Firefox manifest file (manifest.webapp) inside the www directory.</p>
+
+<h2>
+<a name="Firefox%20OS%20Platform%20Guide_developing_your_app">Developing your app</a>
+</h2>
+
+<p>At this point you are ready to go — change the code inside test-app/www to whatever you want your app to be. You can add <a href="">supported plugins</a> to the app using "cordova plugin add", for example:</p>
+
+<pre class="prettyprint"><code>cordova plugin add org.apache.cordova.device
+cordova plugin add org.apache.cordova.vibration
+</code></pre>
+
+<p>You also need to add a custom manifest.webapp file into your test-app/www directory, which should include at least the following:</p>
+
+<pre class="prettyprint"><code>{ 
+    "launch_path":"/index.html",
+    "installs_allowed_from":["*"],
+    "version":"0.0.1",
+    "name":"My app",
+    "pkgName":"io.cordova.hellocordova",
+    "icons": {
+        "128": "/img/logo.png"
+    }
+}
+</code></pre>
+
+<p>For more information about Firefox App manifests, read <a class="external" href="https://developer.mozilla.org/en-US/Apps/Developing/Manifest">App manifest</a> on MDN.</p>
+
+<p>When your app code is written, deploy your changes to the Firefox OS app you've added to your project with</p>
+
+<pre class="prettyprint"><code>$ cordova prepare
+</code></pre>
+
+<p>Note that a build step (i.e. cordova build) is not required when deploying to the Firefox OS platform, as Firefox OS apps are HTML-based, and therefore not compiled. </p>
+
+<h2>
+<a name="Firefox%20OS%20Platform%20Guide_testing_and_debugging">
+Testing and Debugging
+</a>
+</h2>
+
+<p>The app can be tested using the Firefox OS <a class="external" href="https://developer.mozilla.org/en-US/Firefox_OS/Using_the_App_Manager">App Manager</a>.</p>
+
+<p>When you have connected the App Manager to your test device/simulator, select the "Add Packaged App" option, then make sure you point to the test-app/platforms/firefoxos/www/ directory to include the App in the Manager interface.</p>
+
+<p>For here you can install the app on your test device/simulator (with the "Update" button). Using the "Debug" button you can then debug the app and edit its code live. </p>
+
+<p>Note: Before attempting to publish your app you should consider validating it using the <a class="external" href="https://marketplace.firefox.com/developers/validator">App validator</a>.</p>
+
+<h2>
+<a name="Firefox%20OS%20Platform%20Guide_publishing_your_app_on_the_firefox_marketplace">Publishing your app on the Firefox Marketplace</a>
+</h2>
+
+<p>You can submit your app to the Firefox Marketplace, or publish it yourself. Visit the <a class="external" href="https://developer.mozilla.org/en-US/Marketplace">Firefox Marketplace Zone</a> on MDN to find out more about how to do this; <a class="external" href="https://developer.mozilla.org/en-US/Marketplace/Publishing/Publish_options">App publishing options</a> is the best place to start.</p>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>
